@@ -68,3 +68,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# react-app
+
+## overview
+React 时一个javascript库，用于构建前端UI.
+React 是mvc 中的【Mode view Controller】
+## init-project-tree
+.
+├── README.md           
+├── package-lock.json--指定项目中依赖的版本
+├── package.json -- 项目中的依赖
+├── public--静态资源，无需编译可直接调用使用
+│   ├── favicon.ico
+│   ├── index.html--项目中的首页
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src-项目源码的定义的根目录
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js--项目的首页组件，用于将组件绑定到首页指定的根元素。项目的入口js页面
+    ├── logo.svg
+    ├── reportWebVitals.js
+    └── setupTests.js
+
+## component login
+### 集成css framework bulma.io
+`npm install bulma`
+### 编辑login组件
+### 集成sass 
+```
+npm install node-sass --save-dev
+npm install bulma --save-dev
+```
