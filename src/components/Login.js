@@ -1,9 +1,10 @@
 import React from "react";
 import './css/app.sass';
-
+import './css/login.css';
 const Login = () => {
   return (
     <div className="container">
+    <div className="login-warp">
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
@@ -21,6 +22,7 @@ const Login = () => {
       <div class="control">
         <button class="button is-fullwidth is-primary">Login</button>
       </div>
+    </div>
     </div>
   );
 };

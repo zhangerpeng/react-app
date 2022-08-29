@@ -99,6 +99,7 @@ React 是mvc 中的【Mode view Controller】
 
 ## component login
 ### 集成css framework bulma.io
+前端组件库：[Bulma](https://bulma.io/)
 `npm install bulma`
 ### 编辑login组件
 ### 集成sass 
@@ -106,3 +107,66 @@ React 是mvc 中的【Mode view Controller】
 npm install node-sass --save-dev
 npm install bulma --save-dev
 ```
+
+
+## 商品首页
+### 页面组件化
+#### 页面组成:
+![img](./public/aim/products.png)
+
+1. header 与 productList
+2. productList 由 product 构成
+
+### 组件定义demo
+* App.js
+```
+import React from "react";
+import { Header } from "./Header";
+import { Products } from "./Products";
+
+
+export const App = () => {
+
+    return (
+     <div className="container">
+        <Header></Header>
+        <Products></Products>
+     </div>
+    );
+};
+
+
+```
+
+* Header.js
+```
+import React from "react";
+
+export const Header = () => {
+
+    return (
+     <div className="container">
+        hello header;
+     </div>
+    );
+};
+
+```
+* Products.js
+```
+import React from "react";
+
+export const Products = () => {
+
+    return (
+     <div className="container">
+        hello Products;
+     </div>
+    );
+};
+
+
+
+```
+  
+   
