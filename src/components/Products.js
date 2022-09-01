@@ -1,11 +1,11 @@
 import React from "react";
-
+import { ToolBox } from "./ToolBox";
 export const Products = () => {
-
-    return (
-     <div className="products">
-        
-     </div>
-    );
+  return (
+    <>
+      <ToolBox></ToolBox>
+      <hr/>
+      <div className="products">product</div>
+    </>
+  );
 };
-

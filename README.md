@@ -164,9 +164,32 @@ export const Products = () => {
      </div>
     );
 };
+```
 
+### react 配置绝对路径
+[SET ABSOLUTE PATH](https://create-react-app.dev/docs/importing-a-component#absolute-imports)
 
+## 组件的传参
+### FC COMPONENT
+使用关键字props,js内置的属性对象
+```export const Header = (props) => {
+  return (
+    <div className="header">
+      <div className="home">HOME</div>
+      <div className="login-register">
+       <label>LOGIN</label>
+       <label>{props.name}</label>
+      </div>
+    </div>
+  );
+};
+```
+```<Header name="zhangsan"></Header>```
+  
+### 条件渲染
+在react 中可以创建不同在组件，从而在不同的条件下进行组件的渲染
+```
+qqqqqq
 
 ```
-  
    

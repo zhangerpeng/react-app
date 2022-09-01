@@ -7,7 +7,7 @@ export const App = () => {
 
     return (
      <div className="container">
-        <Header></Header>
+        <Header name="zhangsan"></Header>
         <Products></Products>
      </div>
     );
