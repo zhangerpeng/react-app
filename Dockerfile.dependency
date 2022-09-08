@@ -1,0 +1,4 @@
+FROM openjdk:11.0.5
+WORKDIR /app/
+COPY xxxx .
+RUN ./gradlew clean build | return 0

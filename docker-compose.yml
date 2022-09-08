@@ -1,0 +1,27 @@
+version: '3.4'
+services:
+  dependency:
+    image: 'dependency-image'
+    build:
+      context: ''
+      dockerfile: 'dockerfile-path'
+      target: dependency
+
+  builder:
+    image: 'builder-image'
+    build:
+      context: ''
+      target: ''
+
+    environment:
+      - name=value
+
+  api:
+    image: 'api-image'
+    build:
+     context: ''
+     target: ''
+     args: 
+      - name = value
+      
+
