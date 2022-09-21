@@ -169,27 +169,46 @@ export const Products = () => {
 ### react 配置绝对路径
 [SET ABSOLUTE PATH](https://create-react-app.dev/docs/importing-a-component#absolute-imports)
 
-## 组件的传参
-### FC COMPONENT
-使用关键字props,js内置的属性对象
-```export const Header = (props) => {
-  return (
-    <div className="header">
-      <div className="home">HOME</div>
-      <div className="login-register">
-       <label>LOGIN</label>
-       <label>{props.name}</label>
+## 组件的传参 Props
+### Props 作用
+通常在父子组件之间进行数据传输时，在子组件中使用关键字Props获取父组件部分值传递给子组件
+### 使用方式
+1. 定义父要传输的值
+ ```
+   const product = {
+     'id':'3',
+     'name':'xx',
+     'price':'20',
+  }
+
+  render(
+    <Products>
+      <Product product='{product}'></Product>
+    </Products>
+  )
+```
+
+2. 在子组件中通过Props 进行引用 [Props是react内置对象]
+```
+  const Product =()=>{
+    const {id,name,price} = props.product;
+    return (
+      <div className="product">
+        <label>{id}</label>
+        <label>{name}</label>
+        <label>{price}</label>
       </div>
     </div>
-  );
-};
+
+    ) 
+
+  }
 ```
-```<Header name="zhangsan"></Header>```
   
 ### 条件渲染
 在react 中可以创建不同在组件，从而在不同的条件下进行组件的渲染
-```
-qqqqqq
 
-```
+
+
+
    
