@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    background-color: aliceblue;
+    height: 62rem;
+    width: 80%;
+
+}
+
+.product-container {
+    display: flex; 
+    background-color: floralwhite;
+    margin: 2rem 4rem;
+    height: 16rem;
+    width: 20%;
+    border: solid 0.2rem;
+}

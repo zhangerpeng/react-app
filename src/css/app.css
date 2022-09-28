@@ -5,8 +5,6 @@
     padding: 0;
 }
 .container {
-    /* display: flex; */
-    background-color: bisque;
-    height: 60rem;
+    height: 70rem;
     width: 100%;
 }

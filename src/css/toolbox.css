@@ -2,12 +2,11 @@
 
 .toolbox {
   display: flex;
-  height: 4rem;
-  /* background-color:lightcoral; */
+  height: 6rem;
   justify-content: space-between;
   align-items: center;
-  color: white;
   padding: 0 4rem 0 4rem;
+  border-bottom: 0.4rem solid #1c87c9;
 }
 
 .toolbox .store {
@@ -16,8 +15,8 @@
   font-weight: bold;
 }
 .toolbox .input {
-  width: 46em;
-  height: 1.6em;
+  width: 46rem;
+  height: 2rem;
 
 }
 
