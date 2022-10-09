@@ -1,10 +1,2 @@
 @charset 'utf-8';
 
-.product-container {
-    display: flex; 
-    background-color: floralwhite;
-    margin: 2rem 4rem;
-    height: 16rem;
-    width: 20%;
-    border: solid 0.2rem;
-}
